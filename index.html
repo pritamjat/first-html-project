@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Text</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #222;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .animate-text {
+            font-size: 2.5rem;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: slide-in-out 3s ease-in-out infinite;
+        }
+
+        @keyframes slide-in-out {
+            0% {
+                transform: translateX(-100%);
+            }
+            50% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="animate-text">I am not a human</div>
+
+</body>
+</html>
